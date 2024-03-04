@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Harjoitukset</title>
+</head>
+<body>
+
+<div id="div1">
+
+<h1>T.1</h1>
+<p>Anna kolme numeroa, ja paina järjestä luvut nappia. Ohjelma laittaa ne järjestykseen.</p>
+<p>Anna ensimmäinen numero:
+<input id="yksi" type="number"><br></p>
+<p>Anna toinen numero:
+<input id="kaksi" type="number"><br></p>
+<p>Anna kolmas numero:
+<input id="kolme" type="number"></p>
+
+<button onclick="jarjestaLuvut()">Järjestä</button>
+
+<div class="vastaus">
+<p id="jarjestys"></p>
+</div>
+
+</div>
+
+<div id="div2">
+    
+<h1>T.2</h1>
+<p>Anna 5 lukua, ja ohjelma etsii niistä suurimman.</p>
+
+<p>Anna ensimmäinen luku:
+<input id="eka" type="number"><br></p>
+
+<p>Anna toinen luku:
+<input id="toinen" type="number"><br></p>
+
+<p>Anna kolmas luku:
+<input id="kolmas" type="number"><br></p>
+
+<p>Anna neljäs luku:
+<input id="neljas" type="number"><br></p>
+
+
+<p>Anna viides luku:
+<input id="viides" type="number"><br></p>
+
+<button onclick="suurinLuku()">Kerro suurin luku</button>
+
+<div class="vastaus">
+    <p id="suurin"></p>
+</div>
+
+</div>
+
+<div id="div3">
+    
+<h1>T.3</h1>
+<p>Anna joku luku, ja ohjelma kertoo, onko antamasi luku parillinen vai pariton.</p>
+
+<p>Anna luku:
+    <input id="luku" type="number"><br></p>
+
+<button onclick="onkoLuku()">Onko luku parillinen va pariton</button>
+
+<div class="vastaus">
+    <p id="pvaip"></p>
+</div>
+
+</div>
+
+<div id="div4">
+    
+<h1>T.4</h1>
+<p>Anna oma ikä, ja tarkista mitä ajoneuvoa saat ajaa.</p>
+
+<p>Anna ikä:
+    <input id="ika" type="number"><br></p>
+
+<button onclick="mikaAjoneuvo()">Millä ajoneuvolla saat ajaa</button>
+
+<div class="vastaus">
+    <p id="aneuvo"></p>
+</div>
+
+</div>
+
+<div id="div5">
+
+<h1>T.5</h1>
+<p>Valitse kieli, ja käännä "Hei maailma!" -teksti.</p>
+
+<p>Valitse kieli:
+<select id="kieli">
+    <option id="ger" value="Hallo Welt!">Saksa</option>
+    <option id="eng" value="Hello world!">Englanti</option>
+    <option id="swe" value="Hej världen!">Ruotsi</option>
+</select>
+</p>
+<button onclick="valitseKieli()">Käännä kielelle</button>
+
+<div class="vastaus">
+    <p id="kaannos"></p>
+</div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
